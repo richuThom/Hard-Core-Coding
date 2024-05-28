@@ -1,3 +1,54 @@
-#abc{
+#heading{
     color: blue;
 }
+.logo{
+width: 200px;
+}
+     
+.header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    
+}
+.nav-items > ul{
+    display: flex;
+    list-style-type: none;
+    padding-right: 300px;
+} 
+.nav-items >ul > li {
+    padding: 50px;
+}
+.search{
+    padding-top: 50px;
+    padding-left: 200px;
+    
+}
+.restaurant{
+    width: 200px;
+    padding: 5px;
+    border-radius: 26px;
+    height: 193px;
+    
+}
+.restaurant-container{
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    
+  
+}
+.card{
+    background-color: rgb(240, 226, 232);
+    width: 210px;
+    height: 384px;
+    padding: 8px;
+    margin: 2px;
+    
+}
+.card:hover{
+    border: 2px solid red;
+    cursor: pointer;
+
+}
+
