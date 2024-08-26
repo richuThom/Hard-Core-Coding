@@ -22,6 +22,7 @@ width: 200px;
 .search{
     padding-top: 50px;
     padding-left: 200px;
+    display: flex;
     
 }
 .restaurant{
@@ -35,6 +36,7 @@ width: 200px;
     padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 101px;
     
   
 }
@@ -50,5 +52,79 @@ width: 200px;
     border: 2px solid red;
     cursor: pointer;
 
+}
+.filter{
+    padding-left: 1409px;
+}
+.filter_btn{
+    width: 80px; 
+    height: 50px;
+    background-color: lightpink;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.menu{
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 8px;
+    
+}
+.menu-title > ul{
+    
+    list-style-type: none;
+    padding-right: 300px;
+} 
+.menu-title >ul > li {
+    
+    padding: 5px;
+    
+}
+.accordion{
+    padding: 7px;
+    width: 1500px;
+}
+.accordion-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    padding: 20px;
+    
+    
+}
+.menu-image{
+    height: 144px;
+    width: 156px;
+    object-fit: cover;
+    border-radius: 12px;
+    overflow: clip;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.img-button{
+    position: absolute;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.img-button:hover{
+    
+    border: 2px solid red;
+    cursor: pointer;
+}
+.image-holder{
+    position: relative;
+    padding-left: 1309px;
+    display: inline-block;
+
+}
+.accordion-body{
+    width: 1500px;
+    
+    
 }
 
