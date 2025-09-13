@@ -6,7 +6,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def get_diff():
     result = subprocess.run(
-        ["git", "diff", "origin/main...HEAD"],
+        ["git", "diff", "origin/main", "--"],
         stdout=subprocess.PIPE,
         text=True
     )
