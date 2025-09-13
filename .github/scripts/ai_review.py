@@ -1,8 +1,9 @@
 import os
-import openai
 import subprocess
+from openai import OpenAI
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+# Initialize OpenAI client with your API key
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def get_diff():
     result = subprocess.run(
@@ -14,11 +15,11 @@ def get_diff():
 
 def review_code(diff):
     prompt = f"You're a senior software engineer. Review this code diff and suggest improvements:\n\n{diff}"
-    response = openai.ChatCompletion.create(
-        model="gpt-4",
+    response = client.chat.completions.create(
+    model="gpt-3.5-turbo",
         messages=[{"role": "user", "content": prompt}]
     )
-    return response['choices'][0]['message']['content']
+    return response.choices[0].message.content
 
 if __name__ == "__main__":
     diff = get_diff()
